@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	<meta http-equiv="Content-Language" content="en" />
+	<meta name="keywords" content="michal, valasek, valášek, fujinmi, fuji, slovakia, webdesign, php, ruby on rails, ror" />
+	<meta name="description" content="Michal Valášek" />
+	<meta name="robots" content="all" />
+	<meta name="revisit-after" content="7 days" />
+	<meta name="author" content="Michal Valasek" />
+	<meta name="copyright" content="Michal Valášek" />
+	
+	<title>Michal Valášek</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+	
+	<link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico" />
+	
+	<script type="text/javascript" charset="utf-8" src="jquery.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="sammy.min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		
+		var app = $.sammy(function(){
+			
+			this.get('#/', function(){
+				$('.page').hide();
+				$('#page_index').fadeIn('slow');
+			});
+			
+			this.get('#/about', function(){
+				$('.page').hide();
+				$('#page_about').fadeIn('slow');
+			});
+			
+			this.get('#/skills', function(){
+				$('.page').hide();
+				$('#page_skills').fadeIn('slow');
+			});
+			
+		});
+		
+		$(function(){			
+			$('#page_index').show();
+			app.run();
+		});
+
+	</script>
+</head>
+<body>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16531382-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+	
+	<div id="content">
+		
+		<a href="#/" title="Michal Valášek" id="logo">
+			<img src="mv_logo_194x194.png" alt="MV Logo" />
+		</a>
+		
+		<h1>Michal Valášek</h1>
+		
+		<div id="page_index" class="page">
+			
+			<div style="height:35px"></div>
+			
+			<h2>Freelance web developer</h2>
+			
+			<p>michal.valasek<script type="text/javascript">document.write('&#64;');</script>gmail.com</p>
+			
+			<p>@michalvalasek</p>
+		</div>
+		
+		<div id="page_about" class="page">
+			
+			<div style="height:5px"></div>
+			
+			<p>Is (not only) a web programmer, <b>technology</b> fan, cinema addict, <b>book</b>lover (especially oldschool scifi), likes <b>history</b>, sometimes plays guitar and shoots <b>photos</b>. Rides snowboard and likes to <b>travel</b>. Loves quality food. Lives <b>online</b>.</p>
+		
+		</div>
+		
+		<div id="page_skills" class="page">
+			
+			<div style="height:30px"></div>
+			
+			<p><b>I develop web and mobile apps</b></p>
+			
+			<ul>
+				<li>PHP frameworks</li>
+				<li>Ruby on Rails</li>
+				<li>Javascript</li>
+				<li>HTML5 + SCSS</li>
+			</ul>
+			
+		</div>
+		
+	</div>
+	
+	<ul class="buttons">
+		<li><a href="#/about" title="About me" class="button">about</a></li>
+		<li><a href="#/skills" title="My skills" class="button">skills</a></li>
+		<li><a href="http://linkedin.com/in/mvalasek" title="linked in profile" class="external">linked in</a></li>
+		<li><a href="http://twitter.com/michalvalasek" title="twitter" class="external">twitter</a></li>
+	</ul>
+	
+	<ul class="buttons">
+		<li><a href="https://plus.google.com/101455459482516251890" title="google+" class="external">google+</a></li>
+		<li><a href="http://www.flickr.com/photos/27609656@N02/" title="photos on flickr" class="external">flickr</a></li>
+		<li><a href="http://michalvalasek.posterous.com" title="posterous" class="external">posterous</a></li>
+	</ul>
+		
+</body>
+</html>
